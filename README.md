@@ -43,6 +43,8 @@
 
 ### Description of data
 - Name of the data: Historic data of houses sold between May 2014 to May 2015, from Seattle, Washington 
-- Number of data points: 21597
-- Number of features: 21
-- Target attribute: Price
+- Number of data points: 21,814
+- Number of features: 20
+- Target attribute: Accident Result
+
+### General data cleaning, translating dataset, exploration of data/visualization 
