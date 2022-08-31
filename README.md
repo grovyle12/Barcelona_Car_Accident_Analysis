@@ -1,10 +1,10 @@
-# Bacelona Car Accident Analysis
+# Barcelona Car Accident Analysis
 - Final Classification Analysis Project: Python Tableau Files included
 - In addition, each .xls/.csv files used for each analysis is provided
 - For each folder provided, the respective analysis file along with the paired .xls/.csv
 
 ### Purpose of Project
-- Clean, analyze and present results of analysis of car accidents from Bacelona, Spain, from the years 2020-2021
+- Clean, analyze and present results of analysis of car accidents from Barcelona, Spain, from the years 2020-2021
 - Develop the optimum regression model to predict target (price). .ipynb files contains comparison of all possible regression models with Linear Regression and K-Nearest Neighbors.
 - Use Tableau to garder further insights, such as using a density map to visualize 
 
