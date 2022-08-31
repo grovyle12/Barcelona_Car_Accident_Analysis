@@ -47,4 +47,5 @@
 - Number of features: 20
 - Target attribute: Accident Result
 
-### General data cleaning, translating dataset, exploration of data/visualization 
+### General data cleaning, translating dataset, exploration of data/visualization
+- In my research, wanted to analyze a dataset that could have an impact on someone's quality of life, or rather, can I develop an analysis and model that could be of use to institutions of welfare, such as a hosiptial 
