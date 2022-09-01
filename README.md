@@ -1,5 +1,5 @@
 # Barcelona Car Accident Analysis
-- Final Classification Analysis Project: Python Tableau Files included
+- Final Classification Analysis Project: Python Tableau Files included for each specific machine learning model
 - In addition, each .xls/.csv files used for each analysis is provided
 - For each folder provided, the respective analysis file along with the paired .xls/.csv
 
@@ -48,15 +48,25 @@
 - Target attribute: Accident Result
 
 ### General data cleaning, translating dataset, exploration of data/visualization
+
 - In my research, wanted to analyze a dataset that could have an impact on someone's quality of life. MY first task was to assemble the 2 years worth of data. Due to some columns not being available in one, and certain time-date column redundancies, we drop columns which did contain valuable information, but for sake of analysis, we did not include them.
 - I first translated each dataset's column names, and changed errors in the age (-1 was a data point, an invalid value for age). We then combined both datasets once each column matched in data types, and then converted those data types that would be better suited as categorical data, such as streetcode for the streets of Barcelona
 - We also lightly checked for and replaced null values, such as with age, latitude and longitude. We also quickly checked for duplicates.
-- We then dropped a few columns for redudancy, those that have too large number of cateogorical unique values, and other location coordinates. `neighborhood_code`,`month_id`,`neighborhood_code`,`x_coordinate_utm_format`,`y_coordinate_utm_format`
+- We then dropped a few columns for redudancy, those that have too large number of cateogorical unique values, and other location coordinates: `neighborhood_code`,`month_id`,`neighborhood_code`,`x_coordinate_utm_format`,`y_coordinate_utm_format`
 Finnaly, I thought it would be a good moment to practice appending dictionaries with for loops, and apply that to translating the entire dataset. I first attempted to use googletrans, but found it much faster to do it 'by hand', using google translate throught the browser and making a list of translating vehicle names, months, and accident results. 
+- After translation, I wanted to take a quick look at 3 columns which contained alot of 'unknown' values, and if the majority of those columns are occupied by unknowns, I thought it best to drop that column. I would later for the exploratory data analysis to make that decision.
 - 
-
-
-
+### Exploratory Data Analysis
+- I made a few visualizations to get a better look at the data. one of them includes a stacked bar chart, which gives us the count of total accidents pertaining to a certain vehicle type, as well as the ration of types of accidents that occured with said vehicle. I also constructed stacked bar graphs with month and time, with each proportition of every accident type show as well. I also developed 2 pie graphs, for the highest half of accident-prone vehicle, and another for the lower half.
+- I also constructed some boxplots and made an interesting discovery: Whether it was day of the week, month, or accident type, the medium age of every vicitim was around 40 years old. Another insight was viewed in a density plot, where it is most probable for a woman in her early 20's, while men tend to have a bimodel occurance of early 20's and very early 40s 
+-Through visualization, although the `reason for travel pedestrian` is a useful column, over 97% of the data is of the 'unknown', i decided to drop it.  
+- As a last drop of data, 'death following 24 hours after the accident' and 'unknown' variables within the column 'accident result', did not produce enough occurances to make SMOTE viable, which I would later discover was necessary for my model. This led me to drop any rows with these specific variables. 
+### Normalization/Encoding/Results
+ - In my logistic regression model, i used 4 different transformations for my numerical data, with each interation giving me 4 similar scores, for my Normalizer, StandardScaler, MinmaxScaler, and MaxAbsScaler. For my K-nearest neighbors model, it gave me my worse performance, with on average 55% accuracy. My decision tree model and random forest model showed the best promise, which each giving me an accuray of 80% and 89%, respectively. The largest change that helped each model overall was implementing SMOTE. My target was largely unbalanced, thus after implementing SMOTE, the increase in accuracy was very apparent, and I feel I could have done this much sooner.
+-
+### Conclusion/Areas of improvement/References
+Overall, I feel satisfied with my analysis and machine learning model outcomes. I would have liked to have had time to implement a new machine learing model I had never used before, such as Naive Bayes classifier, and I would have liked to implement VIF (Variance Inflation Factor) to take a better look at correlation within my data set. Lastly, gridsearching to hyper tune my parameters would have been essential, unfortunately, due to hardware limitations, I was unable to do so effectively. 
+I used various resources to assist in this code, and my teacher, Himanshu Aggarwal, assisted me a great deal. In general, I used stack overflow for various references. Should you have any questions about this project please contact me at mauricio.ruiz93@outlook.com
 
 
 
