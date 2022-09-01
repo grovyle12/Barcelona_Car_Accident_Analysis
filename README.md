@@ -48,4 +48,33 @@
 - Target attribute: Accident Result
 
 ### General data cleaning, translating dataset, exploration of data/visualization
-- In my research, wanted to analyze a dataset that could have an impact on someone's quality of life, or rather, can I develop an analysis and model that could be of use to institutions of welfare, such as a hosiptial 
+- In my research, wanted to analyze a dataset that could have an impact on someone's quality of life. MY first task was to assemble the 2 years worth of data. Due to some columns not being available in one, and certain time-date column redundancies, we drop columns which did contain valuable information, but for sake of analysis, we did not include them.
+- I first translated each dataset's column names, and changed errors in the age (-1 was a data point, an invalid value for age). We then combined both datasets once each column matched in data types, and then converted those data types that would be better suited as categorical data, such as streetcode for the streets of Barcelona
+- We also lightly checked for and replaced null values, such as with age, latitude and longitude. We also quickly checked for duplicates.
+- We then dropped a few columns for redudancy, those that have too large number of cateogorical unique values, and other location coordinates. `neighborhood_code`,`month_id`,`neighborhood_code`,`x_coordinate_utm_format`,`y_coordinate_utm_format`
+Finnaly, I thought it would be a good moment to practice appending dictionaries with for loops, and apply that to translating the entire dataset. I first attempted to use googletrans, but found it much faster to do it 'by hand', using google translate throught the browser and making a list of translating vehicle names, months, and accident results. 
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
