@@ -62,29 +62,11 @@ Finnaly, I thought it would be a good moment to practice appending dictionaries 
 -Through visualization, although the `reason for travel pedestrian` is a useful column, over 97% of the data is of the 'unknown', i decided to drop it.  
 - As a last drop of data, 'death following 24 hours after the accident' and 'unknown' variables within the column 'accident result', did not produce enough occurances to make SMOTE viable, which I would later discover was necessary for my model. This led me to drop any rows with these specific variables. 
 ### Normalization/Encoding/Results
- - In my logistic regression model, i used 4 different transformations for my numerical data, with each interation giving me 4 similar scores, for my Normalizer, StandardScaler, MinmaxScaler, and MaxAbsScaler. For my K-nearest neighbors model, it gave me my worse performance, with on average 55% accuracy. My decision tree model and random forest model showed the best promise, which each giving me an accuray of 80% and 89%, respectively. The largest change that helped each model overall was implementing SMOTE. My target was largely unbalanced, thus after implementing SMOTE, the increase in accuracy was very apparent, and I feel I could have done this much sooner.
--
+- In my logistic regression model, i used 4 different transformations for my numerical data, with each interation giving me 4 similar scores, for my Normalizer, StandardScaler, MinmaxScaler, and MaxAbsScaler. For my K-nearest neighbors model, it gave me my worse performance, with on average 55% accuracy. My decision tree model and random forest model showed the best promise, which each giving me an accuray of 80% and 89%, respectively. The largest change that helped each model overall was implementing SMOTE. My target was largely unbalanced, thus after implementing SMOTE, the increase in accuracy was very apparent, and I feel I could have done this much sooner.
+### Tablaeu visualizations/Dashboard
+- The first item in my dashboard consists of a density map, showing the various accident locations in Barcelona, Spain, differentiated by color and by age, ranging only from ages 39 to 41. At first glance it can be seen that most accidents occur in Eixample. This gives us a clear idea of where accidents are occuring and at what density per district.
+- The second item consists of a count of the top 5 highest accident incidences within Barcelona, with a count for each. 
+- The last item consists of a barchart which gives us a count of accidents per hour. It 
 ### Conclusion/Areas of improvement/References
-Overall, I feel satisfied with my analysis and machine learning model outcomes. I would have liked to have had time to implement a new machine learing model I had never used before, such as Naive Bayes classifier, and I would have liked to implement VIF (Variance Inflation Factor) to take a better look at correlation within my data set. Lastly, gridsearching to hyper tune my parameters would have been essential, unfortunately, due to hardware limitations, I was unable to do so effectively. 
-I used various resources to assist in this code, and my teacher, Himanshu Aggarwal, assisted me a great deal. In general, I used stack overflow for various references. Should you have any questions about this project please contact me at mauricio.ruiz93@outlook.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Overall, I feel satisfied with my analysis and machine learning model outcomes. I would have liked to have had time to implement a new machine learing model I had never used before, such as Naive Bayes classifier, and I would have liked to implement VIF (Variance Inflation Factor) to take a better look at correlation within my data set. Lastly, gridsearching to hyper tune my parameters would have been essential, unfortunately, due to hardware limitations, I was unable to do so effectively. 
+-I used various resources to assist in this code, and my teacher, Himanshu Aggarwal, assisted me a great deal. In general, I used stack overflow for various references. Should you have any questions about this project please contact me at mauricio.ruiz93@outlook.com
