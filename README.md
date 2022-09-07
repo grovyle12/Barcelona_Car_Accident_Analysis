@@ -6,7 +6,7 @@
 ### Purpose of Project
 - Clean, analyze and present results of analysis of car accidents from Barcelona, Spain, from the years 2020-2021
 - Develop the optimum regression model to predict target (outcome of accident). .ipynb files contains comparison of all possible classification models including logistic regression, K nearest neighbors, decision tree, and random forest
-- Use Tableau to garder further insights, such as using a density map to visualize 
+- Use Tableau to garner further insights, such as using a density map to visualize car accident locations in Barcelona and its 14 districts
 
 ### Problem Definition
 -Data: The data set consists of information on some 22,000 car accidents provided by Barcelona's City Hall Open Data Service.  The dataset consisted of people who have been involved in an accident, managed by the Police in the city of Barcelona, whom have suffered some type of injury ( slightly wounded, serious injuries or death). It includes a description of the person (driver, passenger or pedestrian), sex, age, vehicle associated person if the cause was pedestrian as well as the locations of the victim's accident, such as on the crosswalk or sidewalk. (Note: Some features were dropped)
