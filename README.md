@@ -5,7 +5,7 @@
 
 ### Purpose of Project
 - Clean, analyze and present results of analysis of car accidents from Barcelona, Spain, from the years 2020-2021
-- Develop the optimum regression model to predict target (price). .ipynb files contains comparison of all possible regression models with Linear Regression and K-Nearest Neighbors.
+- Develop the optimum regression model to predict target (outcome of accident). .ipynb files contains comparison of all possible classification models including logistic regression, K nearest neighbors, decision tree, and random forest
 - Use Tableau to garder further insights, such as using a density map to visualize 
 
 ### Problem Definition
